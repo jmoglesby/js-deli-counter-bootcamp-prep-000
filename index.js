@@ -20,7 +20,7 @@ function currentLine(line) {
     var personList = "";
     for (let i = 0; i < line.length; i++) {
       var person = line[i]
-      personList.concat(', ',`${i + 1}. ${person}`);
+      personList += `${i > 0 ? ', ' : ''}${person}`;
     }
     res = `${res}: ${personList}`;
   } else {
