@@ -19,7 +19,7 @@ function currentLine(line) {
     var personList;
     for (let i = 0; i < line.length; i++) {
       var person = line[i]
-      personList.con ${i + 1}. ${person}`;
+      personList.concat(', ',`${i + 1}. ${person}`);
     }
     res = `${res}: ${personList}`;
   } else {
