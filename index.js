@@ -17,7 +17,7 @@ function nowServing (line) {
 function currentLine(line) {
   var res = "The line is currently";
   if (line.length > 0) {
-    var personList;
+    var personList = "";
     for (let i = 0; i < line.length; i++) {
       var person = line[i]
       personList.concat(', ',`${i + 1}. ${person}`);
