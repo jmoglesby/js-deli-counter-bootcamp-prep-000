@@ -6,9 +6,9 @@ function takeANumber(line, newPerson) {
 function nowServing (line) {
   var nextServed;
   if (line.length > 0) {
-    nextServed = line.shift;
+    nextServed = `Currently serving ${line.shift}.`;
   } else {
-    nextServed = "There is nobody waiting to be served.";
+    nextServed = "There is nobody waiting to be served!";
   }
   return nextServed;
 }
@@ -19,7 +19,7 @@ function currentLine(line) {
     var personList;
     for (let i = 0; i < line.length; i++) {
       var person = line[i]
-      personList = `${personList}, ${i + 1}. ${person}`;
+      personList.con ${i + 1}. ${person}`;
     }
     res = `${res}: ${personList}`;
   } else {
